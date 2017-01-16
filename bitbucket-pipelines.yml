@@ -11,3 +11,4 @@ pipelines:
         script: # Modify the commands below to build your repository.
           - composer install
           - phpunit
+          - phpcs --standard=PSR2 --report=summary --colors --ignore=vendor,tododocker,storage .
