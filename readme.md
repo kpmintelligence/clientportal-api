@@ -1,4 +1,29 @@
-# Lumen PHP Framework
+# TODO API
+
+## Docker on Windows
+
+1)Install Docker Toolbox
+https://www.docker.com/products/docker-toolbox
+
+2) Use docker Quickstart Terminal to access in docker cli
+3) clone the todoapi repo into one of your c:\Users folder
+
+4) clone the tododocker repo into the todoapi folder
+
+5) open the tododocker folder in the Docker Quickstart terminal and use the “docker-compose up -d nginx” command (at first it will takes ~5-6 mins, later it will takes 2-3 seconds to boot up)
+
+6) check the ‘docker-machine ip’
+
+6) check the workspace container id and log in: ‘docker ps’ and ‘docker exec -it <workspace_id> bash’
+
+7) login to the todoapi’s root folder and run ‘composer install’
+
+8) now, you can see/use the api in your browser with the docker-machine ip, you can run unit tests in the workspace container with phpunit and you can check the coding standards in the workspace container with the ‘phpcs --standard=PSR2 --colors --ignore=vendor,storage,tododocker’
+
+9) Client: clone the todoclient repo, run npm install, npm serve, npm test - you’ll need an installed NodeJS
+
+
+## Lumen PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
