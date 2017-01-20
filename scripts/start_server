@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /var/app/todo/docker
-docker-compose up -d nginx
+/usr/local/bin/docker-compose up -d nginx
 
