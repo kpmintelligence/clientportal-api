@@ -12,5 +12,5 @@
 */
 
 $app->get('/', function () use ($app) {
-    return 'a'.$app->version();
+    return $app->version();
 });

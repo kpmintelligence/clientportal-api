@@ -17,7 +17,7 @@ class ExampleTest extends TestCase
         $this->get('/');
 
         $this->assertEquals(
-            'a' . $this->app->version(),
+            $this->app->version(),
             $this->response->getContent()
         );
     }
